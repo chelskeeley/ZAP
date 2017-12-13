@@ -1,0 +1,61 @@
+/*STATS SECTION STYLES*/
+
+.statistics {
+    background: #2f2f2f;
+    padding: 90px;
+    @include tablet {
+        padding: 30px 0;
+    }
+    .wrapper {
+        display: flex;
+        justify-content: space-around;
+        @include phone {
+            flex-wrap: wrap;
+        }
+    }
+}
+
+.statTiles {
+    p {
+        color: #fff;
+        text-align: center;
+        position: relative;
+    }
+    .italic {
+        padding-top: 20px;
+        @include tablet {
+            padding-top: 5px;
+        }
+        @include phone {
+            padding-bottom: 20px;
+        }
+        &::after {
+            content: "";
+            display: block;
+            position: absolute;
+            height: 3px;
+            width: 53px;
+            border-top: 1px solid #fff;;
+            left: 30px;
+            top: 55px;
+            @include tablet {
+                top: 25px;
+                left: 10px;
+            }
+            @include phone {
+                display: none;
+            }
+        }
+    }
+    @include phone {
+        width: 50%;
+    }
+}
+
+.statNumber {
+    font-size: 4.8rem;
+    margin: 0;
+    @include tablet {
+        font-size: 3rem;
+    }
+}

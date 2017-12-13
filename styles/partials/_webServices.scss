@@ -1,0 +1,113 @@
+/*WEB SERVICES SECTION*/
+.webServices {
+    .wrapper {
+        display: flex;
+        max-width: 1030px;
+        justify-content: space-between;
+    }
+}
+
+.services {
+    width: 70%;
+    @include smallDesk {
+        margin: 0 auto;
+    }
+    @include tablet {
+        width: 90%;
+    }
+    p {
+        padding: 0 40px 20px 0;
+        line-height: 3rem;
+        @include smallDesk {
+            padding-right: 0;
+        }
+        @include phone {
+            text-align: center;
+        }
+    }
+    .italic {
+        @include tablet {
+            padding-bottom: 0;
+        }
+    }
+    h3 {
+        @include phone {
+            text-align: center;
+        }
+    }
+}
+
+.multiConcepts {
+    display: flex;
+    justify-content: space-between;
+    @media (max-width: 375px) {
+        display: none;
+    }
+}
+
+.concepts {
+    display: flex;
+    width: 28%;
+    justify-content: space-between;
+    @include smallDesk {
+        flex-direction: column;
+        align-items: center;
+    }
+    h4 {
+        @include phone {
+            text-align: center;
+        }
+    }
+}
+
+.webServices i {
+    position: relative;
+    color: $headings;
+    font-size: 2.5rem;
+    left: 0;
+    top: 15px;
+    @include smallDesk {
+            margin-bottom: 30px;
+        }
+}
+
+i.fa.fa-camera-retro::before, 
+i.fa.fa-magic::before, 
+i.fa.fa-diamond::before {
+    padding: 15px;
+    border: 1px solid #d8d8d8;
+    border-radius: 50%;
+}
+
+.boxLink {
+    color: #141414;
+    text-transform: uppercase;
+    border: 1px solid #141414;
+    padding: 15px 30px;
+    letter-spacing: 3px;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 50px;
+    text-align: center;
+    &:hover {
+        color: $highlight;
+        border: 1px solid $highlight;
+    }
+}
+
+.moreServicesLink {
+    @include phone {
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    @media (max-width: 375px) {
+        margin-top: 10px;
+    }
+}
+
+.servicesLogo {
+    @include smallDesk {
+        display: none;
+    }
+}

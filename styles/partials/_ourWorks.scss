@@ -1,0 +1,84 @@
+/*OUR WORKS SECTION*/
+
+section header {
+    @include sectionHead;
+}
+
+.worksLinks {
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 30px;
+    @include smallDesk {
+        width: 90%;
+        justify-content: space-between;
+    }
+    @include tablet {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    a {
+        font-size: 1rem;
+        text-transform: uppercase;
+        color: #141414;
+        font-weight: bold;
+        padding: 15px 25px;
+        border: 1px solid #ececec;
+        letter-spacing: 1px;
+        margin: 5px;
+        text-align: center;
+        &:hover {
+            border: 1px solid $highlight;
+            color: $highlight;
+        }
+    }
+}
+
+.fullWidth {
+    display: flex;
+    flex-wrap: wrap;
+    li {
+        width: 25%;
+        position: relative;
+        @include tablet {
+            width: 50%;
+        }
+    }
+    img {
+        width: 100%;
+        display: block;
+    }
+    li.scaleUp{
+        transition: all 0.3s ease;
+        transform: scale(1);
+    }
+    li.scaleUp:hover {
+        transform: scale(1.1);
+        z-index: 10;
+    }
+    figcaption {
+        color: #fff;
+        text-align: center;
+        padding-top: 25%;
+        position: absolute;
+        background: rgba(0, 0, 0, 0.7);
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        opacity: 0;
+        transition: all 0.3s ease;
+        @include smallDesk {
+            font-size: 1.2rem;
+        }
+    }
+    li:hover figcaption {
+        opacity: 1;
+    }
+}
+
+figcaption p:last-child {
+    text-transform: uppercase;
+}
+

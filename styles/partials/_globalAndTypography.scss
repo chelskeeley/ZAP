@@ -1,0 +1,186 @@
+/*VARIABLES*/
+$mostText: #6f6f6f;
+$headings: #141414;
+$pageHeader: #fff;
+$highlight: #eeb013;
+$smallDesktopWidth: 940px;
+$tabletWidth: 768px;
+$phoneWidth: 480px;
+
+
+@mixin smallDesk {
+  @media (max-width: $smallDesktopWidth) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (max-width: $tabletWidth) {
+    @content;
+  }
+}
+
+@mixin phone {
+  @media (max-width: $phoneWidth) {
+    @content;
+  }
+}
+
+/*MIXINS*/
+@mixin italicText($fontSize){
+    font-size: $fontSize;
+    font-family: 'Crimson Text', serif;
+    font-style: italic;
+    margin: 0;
+}
+
+@mixin headings($fontSize){
+    font-size: $fontSize;
+    color: $headings;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+@mixin sectionHead {
+    text-align: center;
+    margin-bottom: 40px;
+    .sectionHeader{
+        position: relative;
+        display: inline-block;
+    }
+    p {
+        padding-top: 15px;
+    }
+    .imgBox {
+        display: inline-block;
+    }
+    .imgBox::before,
+    .imgBox::after {
+        content:"";
+        display: block;
+        position: absolute;
+        height: 2px;
+        border-top: 1px solid #d8d8d8;
+        width: 80px;
+        top: 62px;
+    }
+    .imgBox::before {
+        left: -10px;
+        @include tablet {
+            left: -30px;
+        }
+    }
+    .imgBox::after {
+        right: -10px;
+        @include tablet {
+            right: -30px;
+        }
+    }
+}
+
+
+
+/*GLOBAL STYLES*/
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.4rem;
+    color: $mostText;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.wrapper {
+    max-width: 1170px;
+    margin: 0 auto;
+    @media (max-width: 1170px) {
+        padding: 0 30px;
+    }
+    @include phone {
+        padding: 0 20px;
+    }
+}
+
+section{
+    margin: 100px 0;
+    @include tablet {
+        margin: 50px 0;
+    }
+    @include phone {
+        margin: 30px 0;
+    }
+}
+
+ul, li {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/*GENERAL TYPOGRAPHY STYLES*/
+
+h1 {
+    color: $pageHeader;
+    font-size: 9rem;
+    font-weight: 700;
+    span {
+        font-size: 14rem;
+        @include smallDesk {
+            font-size: 8rem;
+        }
+        @include tablet {
+            font-size: 3.5rem;
+        }
+        @include phone {
+            font-size: 3.2rem;
+        }
+    }
+    @include smallDesk {
+        font-size: 5rem;
+    }
+    @include tablet {
+        font-size: 2.4rem;
+        margin-top: 100px;
+    }
+    @include phone {
+        font-size: 2.4rem;
+    }
+}
+
+h2 {
+    @include headings(1.8rem);
+}
+
+h3 {
+    @include headings(2.4rem);
+    letter-spacing: 3px;
+    @include tablet {
+        font-size: 2.2rem;
+        margin-top: 0;
+    }
+}
+
+h4 {
+    @include headings(1.4rem);
+    @include phone {
+        font-size: 1.2rem;
+    }
+}
+
+.italic {
+    @include italicText(1.8rem);
+    @include tablet(){
+        font-size: 1.4rem;
+    }
+    @include phone{
+        font-size: 1.4rem;
+    }
+}
+

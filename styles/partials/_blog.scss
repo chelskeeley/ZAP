@@ -1,0 +1,192 @@
+/* BLOG SECTION STYLES*/
+
+.latestBlog {
+    .imgBox {
+        display: inline-block;
+    }
+    .imgBox::before,
+    .imgBox::after {
+        content:"";
+        display: block;
+        position: absolute;
+        height: 2px;
+        border-top: 1px solid #d8d8d8;
+        width: 80px;
+        top: 62px;
+    }
+    .imgBox::before {
+        left: -40px;
+    }
+    .imgBox::after {
+        right: -40px;
+    }
+    header {
+        margin-bottom: 80px;
+    }
+}
+
+// below styles to maintain the same aspect ratio between text and image blocks, courtesy of http://www.mademyday.de/css-height-equals-width-with-pure-css.html
+
+.blogTiles {
+    position: relative;
+    &::before {
+        content: "";
+        display: block;
+        padding-top: 69%;
+    }
+    figure {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+    }
+}
+
+.blogWrapper {
+    @media (max-width: 1130px) {
+        max-width: 850px;
+        margin: 0 auto;
+    }
+}
+
+.blogGallery {
+    display: flex;
+    flex-wrap: wrap;
+    .scaleUp {
+        width: 50%;
+        transition: all 0.3s ease;
+        &:hover {
+            transform: scale(1.05);
+            z-index: 10;
+        }
+        @media (max-width: 1130px) {
+            width: 100%;
+        }
+    }
+    .twoTiles {
+        display: flex;
+        @media (max-width: 605px) {
+            flex-direction: column;
+            width: 70%;
+            margin: 0 auto;
+        }
+        @include phone {
+            width: 95%;
+        }
+        .changeOrder1 {
+            @media (max-width: 605px){
+                order: 1;
+            }
+        }
+        .changeOrder2 {
+            @media (max-width: 605px){
+                order: 2;
+            }
+        }
+    }
+    .blogTiles {
+        width: 50%;
+        @media (max-width: 605px) {
+            width: 100%;
+        }
+        img {
+            width: 100%;
+        }
+    }
+}
+
+.scaleUp1 {
+    @media (max-width: 1130px) {
+        order: 1;
+    }
+}
+
+.scaleUp2 {
+    @media (max-width: 1130px) {
+        order: 3;
+    }
+}
+
+.scaleUp3 {
+    @media (max-width: 1130px) {
+        order: 2;
+    }
+}
+
+.scaleUp4 {
+    @media (max-width: 1130px) {
+        order: 4;
+    }
+}
+
+
+
+.postDescription {
+    padding: 10%;
+    background: #eaeaea;
+    position: relative;
+    .italic {
+        color: #141414;
+        font-size: 1.2rem;
+    }
+    .postTitle {
+        color: #141414;
+        font-size: calc(50% + 1vw);
+        margin: 2% 0;
+        @media (max-width: 830px) {
+            font-size: 1.8rem;
+            margin: 10px 0;
+            
+        }
+    }
+    .postContent {
+        line-height: 20px;
+        font-size: 1.4rem;
+        margin: 5% 0 5% 0;
+        @media (max-width: 830px) {
+            font-size: 1.2rem;
+            line-height: 2rem;
+            margin-bottom: 15px;
+            
+        }
+    }
+    a {
+        color: #141414;
+        text-transform: uppercase;
+        padding: 5px;
+        font-size: 1.2rem;
+        font-weight: 700;
+        &:hover {
+            color: $highlight;
+        }
+    }
+}
+
+.leftTriangle::before,
+.rightTriangle::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 0; 
+    height: 0; 
+    border-top: 2rem solid transparent;
+    border-bottom: 2rem solid transparent; 
+    top: 50%;
+    transform: translateY(-50%);
+    @media (max-width: 605px) {
+        display: none;
+    }
+}
+
+.leftTriangle::before {
+    left: -20px;
+    border-right: 2rem solid #eaeaea; 
+}
+
+.rightTriangle::before {
+    right: -20px;
+    border-left: 2rem solid #eaeaea;
+    z-index: 1;
+}
+

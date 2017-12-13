@@ -1,0 +1,108 @@
+/*PRICING SECTION STYLES*/
+.pricing {
+    @include tablet {
+        padding-bottom: 30px;
+    }
+}
+
+.register {
+    text-align: center;
+    font-size: 1.8rem;
+    span {
+        @include italicText(1.4rem);
+        color: #6f6f6f;
+        text-transform: none;
+    }
+}
+
+.flexPlans {
+    display: flex;
+    justify-content: space-between;
+    @include smallDesk {
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    @media (max-width: 680px) {
+        flex-direction: column;
+        align-items: center;
+    }
+    i {
+        color: $highlight;
+    }
+    li {
+        padding: 20px 0;
+        @media (max-width: 1020px){
+            padding: 10px 0;
+        }
+    }
+}
+
+.monthly {
+    color: #141414;
+    position: relative;
+    padding: 20px 0;
+    .bigPrice {
+        font-size: 5rem;
+        font-family: 'Montserrat', sans-serif;
+        font-style: normal;
+    }
+    .dollarSign {
+        font-size: 1.8rem;
+        font-weight: 700;
+        display: inline-block;
+        font-style: normal;
+        font-family: 'Montserrat', sans-serif;
+        position: relative;
+        top: -28px;
+        left: -5px;
+    }
+}
+
+
+.plans {
+    margin-top: 50px;
+    width: 23%;
+    border: 1px solid #ededed;
+    text-align: center;
+    position: relative;
+    transition: all 0.3s ease;
+    @include smallDesk {
+        width: 35%;
+        @media (max-width: 680px) {
+            width: 60%;
+        }
+        @include phone {
+            width: 80%;
+        }
+    }
+    h4 {
+    border-bottom: 1px solid #ededed;
+    margin: 0 0 20px 0;
+    padding: 20px 0;
+    }
+    &:hover {
+        transform: translateY(-30px);
+        box-shadow: 0 0 40px #b8b5b5;
+    }
+    &:hover .getPlanLink {
+        opacity: 1;
+    }
+}
+
+.getPlanLink {
+    margin: 0;
+    background: #141414;
+    color: #fff;
+    position: relative;
+    bottom: -20px;
+    opacity: 0;
+    transition: all 0.3s ease;
+    &:hover {
+        background: #fff;
+        color: $highlight;
+        border: 1px solid $highlight;
+    }
+    @include tablet {
+        opacity: 1;
+    }
+}

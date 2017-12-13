@@ -1,0 +1,247 @@
+/*FOOTER STYLES*/
+
+footer {
+    background: #202020;
+    padding-top: 60px;
+    color: #646464;
+    @include phone {
+        padding-top: 40px;
+    }
+    h4 {
+        color: #fff;
+        font-weight: 400;
+        letter-spacing: 1px;
+        margin-top: 0;
+    }
+}
+
+.footerContent {
+    display: flex;
+    align-items: flex-start;
+    @media (max-width: 845px) {
+        flex-wrap: wrap;
+    }
+}
+
+.footerLeft, .footerRight {
+    width: 50%;
+    display: flex;
+    align-items: flex-start;
+    @media (max-width: 845px) {
+        width: 100%;
+    }
+}
+
+.footerLeft {
+    @media (max-width: 845px) {
+        order:2;
+        flex-direction: column-reverse;
+    }
+}
+
+.footerRight {
+    @media (max-width: 845px) {
+        margin-bottom: 30px;
+    }
+    @include phone {
+        flex-direction: column;
+    }
+}
+
+.footerText {
+    width: 70%;
+    h4 {
+        color: $highlight;
+        margin-bottom: 30px;
+    }
+    p {
+        line-height: 2.4rem;
+        font-size: 1.2rem;
+        padding: 0 40px 40px 0;
+        @media (max-width: 845px) {
+            padding: 0 0 20px 0;
+        }
+    }
+    @media (max-width: 845px) {
+        text-align: center;
+        width: 100%;
+    }
+}
+
+.footerLinks,
+.twitterWidget,
+.instagram {
+    position: relative;
+    h4 {
+        margin-bottom: 45px;
+        &::before {
+            content: "";
+            display: block;
+            position: absolute;
+            height: 2px;
+            width: 20px;
+            border-top: 3px solid $highlight;
+            top: 30px;
+            left: 32px;
+        }
+    }
+}
+
+.footerLinks {
+    width: 30%;
+    border-left: 1px solid #3a3a3a;
+    border-right: 1px solid #3a3a3a;
+    padding: 0 30px;
+    li {
+        padding-bottom: 25px;
+        text-transform: uppercase;
+        font-size: 1rem;
+        @include smallDesk {
+            font-size: 1.2rem;
+        }
+        &:hover {
+            color: $highlight;
+        }
+        @media (max-width: 600px) {
+            padding-right: 10px;
+        }
+    }
+        @media (max-width: 845px) {
+        border: none;
+        width: 100%;
+        padding: 0;
+    }
+    ul {
+        @media (max-width: 845px) {
+            display: flex;
+            justify-content: space-between;
+        }
+        @media (max-width: 600px){
+            flex-wrap: wrap;
+            padding-bottom: 30px;
+        }
+    }
+    h4::before {
+        @media (max-width: 845px) {
+            left: 0;
+        }
+    }
+}
+
+.twitterWidget {
+    width: 50%;
+    padding: 0 30px;
+    @include phone {
+        width: 100%;
+    }
+    p {
+        font-size: 1.1rem;
+        line-height: 1.8rem;
+        a:hover {
+            color: $highlight;
+        }
+    }
+    .daysAgo {
+        color: #3a3a3a;
+        padding-bottom: 20px;
+    }
+    @media (max-width: 845px) {
+        padding: 0 30px 0 0;
+    }
+    h4::before {
+        @media (max-width: 845px) {
+            left: 0;
+        }
+    }
+}
+
+.instagram {
+    width: 50%;
+    padding-left: 30px;
+    border-left: 1px solid #3a3a3a;
+    @include phone {
+        border: none;
+        width: 100%;
+        padding: 0;
+    }
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding-bottom: 35px;
+        @include phone {
+            padding-bottom: 0;
+        }
+    }
+    li {
+        width: 30%;
+        display: inline-block;
+        margin-bottom: 20px;
+        position: relative;
+        &:hover figcaption {
+            opacity: 1;
+        }
+    }
+    img {
+        width: 100%;
+    }
+    figure {
+        position: relative;
+        display: inline-block;
+        width: 100%;
+    }
+    figcaption {
+        position: absolute;
+        top: 0;
+        bottom: 3px;
+        left: 0;
+        right: 0;
+        background: rgba(238, 176, 19, 0.7);
+        opacity: 0;
+        transition: all 0.3s ease;
+        i {
+            color: #fff;
+            font-size: 2rem;
+        }
+        p {
+            text-align: center;
+            padding-top: 35%;
+            margin: 0;
+        }
+    }
+    h4::before {
+        @include phone {
+            left: 0;
+        }
+    }
+}
+
+.footerCopy {
+    display: flex;
+    justify-content: space-between;
+    @include phone {
+        flex-direction: column-reverse;
+    }
+    p {
+        color: #3a3a3a;
+        font-size: 1.1rem;
+        text-transform: uppercase;
+        padding: 10px 0;
+    }
+    .socialMedia {
+        width: 25%;
+        display: flex;
+        justify-content: space-around;
+        padding: 30px 5px 5px 5px;
+        @include phone {
+            width: 70%;
+            margin: 0 auto;
+        }
+        a {
+            display: inline-block;
+            &:hover {
+                color: $highlight;
+            }
+        }
+    }
+}

@@ -1,0 +1,147 @@
+/*TESTIMONIALS STYLES SECTION*/
+.clientTestimonials {
+    .wrapper {
+        max-width: 740px;
+        margin: 0 auto;
+    }
+    .imgBox::before {
+            left: -15px;
+        }
+    .imgBox::after {
+        right: -15px;
+    }
+}
+// FLICKITY STYLES START HERE
+.carousel {
+    height: 200px; /* set gallery height */
+    @include tablet {
+        height: 250px;
+    }
+    @media (max-width: 590px) {
+        height: 280px;
+    }
+    @media (max-width: 440px) {
+      height: 300px;
+
+    }
+}
+
+.carousel-cell {
+  width: 33.33%;
+  height: 100%; /* inherit height from gallery */
+  padding: 25px;
+  display: inline-block;
+  @include tablet {
+      width: 50%;
+  }
+  @media (max-width: 590px) {
+        width: 70%;
+    }
+  @media (max-width: 440px) {
+      width: 100%;
+  }
+}
+
+ol.flickity-page-dots {
+    bottom: -330px;
+    @media (max-width: 1170px) {
+        bottom: -360px;
+    }
+    @include tablet {
+        bottom: -300px;
+    }
+    @media (max-width: 609px){
+        bottom: -330px;
+    }
+    @media (max-width: 412px) {
+        bottom: -350px;
+    }
+    @media (max-width: 334px) {
+        bottom: -380px;
+    }
+    @media (max-width: 297px) {
+        bottom: -400px;
+    }
+}
+
+.clientPics {
+    width: 80%;
+    margin: 0 auto 40px auto;
+    @include tablet {
+        margin-bottom: 10px;
+    }
+    img {
+        border-radius: 50%;
+        margin: 0 auto;
+        width: 100%;
+    }
+}
+
+.testimonial__content--flex {
+    p {
+        line-height: 30px;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+}
+// FLICKETY STYLES END HERE
+
+.clientInfo {
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    .imgBox {
+        display: inline-block;
+    }
+    .imgBox::before,
+    .imgBox::after {
+        content:"";
+        display: block;
+        position: absolute;
+        height: 2px;
+        border-top: 1px solid #ededed;
+        width: 80px;
+        top: 60px;
+    }
+    .imgBox::before {
+        left: 250px;
+        @media (max-width: 665px) {
+            left: 30%;
+        }
+        @media (max-width: 535px){
+            left: 25%;
+        }
+        @include phone {
+            left: 40px;
+        }
+    }
+    .imgBox::after {
+        right: 250px;
+        @media (max-width: 665px) {
+            right: 30%;
+        }
+        @media (max-width: 535px){
+            right: 25%;
+        }
+         @include phone {
+            right: 40px;
+        }
+        
+    }
+    .italic {
+        margin-bottom: 20px;
+    }
+}
+
+.clientDot {
+    display: flex;
+    color: #d8d8d8;
+    li {
+        padding: 0 5px;
+    }
+    li:first-child {
+        color: $highlight;
+    }
+}

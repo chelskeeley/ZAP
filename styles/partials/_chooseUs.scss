@@ -1,0 +1,136 @@
+/*WHY CHOOSE US STYLES*/ 
+.whyChooseUs {
+.imgBox::before {
+        left: 20px;
+        @include tablet {
+            left: 0;
+        }
+    }
+    .imgBox::after {
+        right: 20px;
+        @include tablet {
+            right: 0;
+        }
+    }
+}
+
+.chooseUs--flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    @media (max-width: 1169px) {
+        width: 98%;
+        margin: 0 auto;
+    }
+    .ultraServices {
+        width: 55%;
+        p {
+            line-height: 3rem;
+        }
+        @include tablet {
+            width: 95%;
+        }
+        @include phone {
+            text-align: center;
+
+        }
+    }
+    .smartPhone {
+        width: 35%;
+        img {
+            position: relative;
+            top: -40px;
+            width: 100%;
+        }
+        @include tablet {
+            display: none;
+        }
+    }
+}
+
+.serviceText {
+    padding-bottom: 30px;
+}
+
+.dark {
+    color: #141414;
+    font-size: 1rem;
+    span {
+        font-family: 'Montserrat', sans-serif;
+        font-style: normal;
+        text-transform: uppercase;
+        font-weight: 700;
+    }
+}
+
+.servicesTiles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-size: 1.3rem;
+    @include phone {
+        flex-wrap: wrap;
+    }
+    .servicesBox {
+        width: 30%;
+        padding: 0 0 10px 90px;
+        position: relative;
+        margin-top: 30px;
+        p {
+            line-height: 2.4rem;
+        }
+        @include tablet {
+            padding-left: 0;
+        }
+        @include phone {
+            width: 47%;
+            text-align: center;
+        }
+    }
+    @include tablet {
+        width: 95%;
+    }
+}
+ .servicesBox p::before {
+    font-family: FontAwesome;
+    color: #141414;
+    display: block;
+    position: absolute;
+    font-size: 3.2rem;
+    top: 25px;
+    left: 25px;
+    @include tablet {
+        display: none;
+    }
+ }
+
+
+.service1 p::before {
+    content: "\f1d9";
+}
+
+.service2 p::before {
+    content: "\f1d5";
+}
+
+.service3 p::before {
+    content: "\f1de";
+}
+
+.service4 p::before {
+    content: "\f186";
+}
+
+.service5 p::before {
+    content: "\f08a";
+}
+
+.service6 p::before {
+    content: "\f0a0";
+}
+
+.service1, 
+.service2, 
+.service3 {
+    border-bottom: 1px solid #ededed;
+}

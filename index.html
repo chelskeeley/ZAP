@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Crimson+Text:400i|Montserrat:400,700" rel="stylesheet">
+    <link rel="icon" href="assets/zapFavicon.png" type="image/png">
+    <!-- stylesheet for flickity -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.0.10/flickity.min.css">
+    <title>ZAP!</title>
+
+</head>
+<!-- Design as provide by template from HackerYou, coded by Chelsea Keeley.
+    Contributions from Yvone Nugyen for screen reader accessibility for social media icon links -->
+    <!-- Mobile menu icon animation coded by Chelsea Keeley, with assistance from https://codepen.io/designcouch/pen/Atyop -->
+<body>
+    <header class="mainHeader clearfix">
+        <div class="menuBar">  <!--menu bar for mobile menu-->
+            <div class="mobileLogo">
+                <img src="assets/zapHeaderLogo.png" alt="ZAP icon">
+            </div>
+            <div class="hamburger toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <div class="wrapper navFlex">
+            <div class="logo">
+                <img src="assets/zapHeaderLogo.png" alt="Zap header logo">
+            </div>
+            <nav class="menu"> <!--main navigation-->
+                <ul class="mainNav">
+                    <li><a href="javascript:void(0)">Home</a></li>        
+                    <li><a href="#works">Demos</a></li>
+                    <li><a href="javascript:void(0)">Pages</a></li>
+                    <li class="portfolio toggleSub">Portfolio <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                        <ul class="subNav menuSub">
+                            <li><a href="javascript:void(0)">First</a></li>
+                            <li><a href="javascript:void(0)">Second</a></li>
+                            <li><a href="javascript:void(0)">Third</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#pricing">Shop</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li>
+                        <a href="javascript:void(0)"><i class="fa fa-shopping-cart" aria-hidden="true" aria-label="shopping cart"></i></a>
+                        <a href="javascript:void(0)"><i class="fa fa-search" aria-hidden="true" area-label="search"></i></a>
+                    </li>
+                </ul>
+            </nav>
+           
+        </div>    
+        <div class="wrapper"> <!--main header-->
+            <div class="headerContent">
+                <h1>We deliver<br/><span>Excellence</span></h1>
+                <p class="italic">We are Creative Studio from Lon Don - UK</p>
+                <a href="javascript:void(0)">Enter</a>
+            </div>
+        </div>
+        <a href="javascript:void(0)" class="arrowLeft"><i class="fa fa-chevron-left" aria-hidden="true"></i></a>
+        <a href="javascript:void(0)" class="arrowRight"><i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+    </header>
+    <main>          
+        <section class="webServices" id="services"> <!--web services section-->
+            <div class="wrapper">
+                <img src="assets/verticalLogo.png" alt="Zap logo" class="servicesLogo">
+                <div class="services">
+                    <p class="italic">Welcome The ZAP - Best solution for Creative Website</p>
+                    <h3>Awesome Multi-Concept Theme</h3>
+                    <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarassing hidden in the middle of text. All the Lorem Ipsum generators on the internet tend to repeat predefined chunks as necessary, making this the first true generator on the internet.</p>
+                    <div class="multiConcepts">
+                        <div class="concepts">
+                            <i class="fa fa-diamond" aria-hidden="true"></i>
+                            <h4>Unique Design</h4>
+                        </div>
+                        <div class="concepts">
+                            <i class="fa fa-camera-retro" aria-hidden="true"></i>
+                            <h4>Photography</h4>
+                        </div>
+                        <div class="concepts">
+                            <i class="fa fa-magic" aria-hidden="true"></i>
+                            <h4>Concept Art</h4>
+                        </div>
+                    </div>
+                    <a href="javascript:void(0)" class="boxLink moreServicesLink">More Services</a>
+                </div>
+            </div>
+        </section>
+        <section class="ourWorks" id="works"><!--our works section-->
+            <div class="wrapper">
+                <header>
+                    <div class="sectionHeader">
+                        <h2>Our Works</h2>
+                        <div class="imgBox">
+                            <img src="assets/hammers.png" alt="Crossed hammers icon.">
+                        </div>
+                        <p class="italic">Show Amazing Your Works</p>
+                    </div>
+                </header>
+                <div class="worksLinks">
+                    <a href="javascript:void(0)">Branding Design</a>
+                    <a href="javascript:void(0)">Photography</a>
+                    <a href="javascript:void(0)">Web Design</a>
+                    <a href="javascript:void(0)">Digital Art</a>
+                    <a href="javascript:void(0)"><i class="fa fa-plus" aria-hidden="true"></i></a>
+                </div>
+            </div>
+            <ul class="fullWidth worksGallery" id="gallery">
+                <li class="scaleUp"><a href="javascript:void(0)">
+                    <figure>
+                        <figcaption>
+                            <p class="italic">Fashion</p>
+                            <p>Crossfit · 15.4 Open Workout</p>
+                        </figcaption>
+                        <img src="assets/ourWorks1.jpg" alt="The grey ocean on a stormy day.">
+                    </figure>
+                </a></li>
+                <li class="scaleUp"><a href="javascript:void(0)">
+                    <figure>
+                        <figcaption>
+                            <p class="italic">Fashion</p>
+                            <p>Crossfit · 15.4 Open Workout</p>
+                        </figcaption>
+                        <img src="assets/ourWorks2.jpg" alt="Beautiful snow-covered mountains reflected in a half frozen lake.">
+                    </figure>
+                </a></li>
+                <li class="scaleUp"><a href="javascript:void(0)">
+                    <figure>
+                    <figcaption>
+                        <p class="italic">Fashion</p>
+                        <p>Crossfit · 15.4 Open Workout</p>
+                    </figcaption>
+                        <img src="assets/ourWorks3.jpg" alt="A majestic waterfall framed against a blue and white cloudy sky.">
+                    </figure>
+                </a></li>
+                <li class="scaleUp"><a href="javascript:void(0)">
+                    <figure>
+                        <figcaption>
+                            <p class="italic">Fashion</p>
+                            <p>Crossfit · 15.4 Open Workout</p>
+                        </figcaption>
+                        <img src="assets/ourWorks4.jpg" alt="A child's legs laying along his Dad's lap, sitting in the water. ">
+                    </figure>
+                </a></li>
+                <li class="scaleUp"><a href="javascript:void(0)">
+                    <figure>
+                        <figcaption>
+                            <p class="italic">Fashion</p>
+                            <p>Crossfit · 15.4 Open Workout</p>
+                        </figcaption>
+                        <img src="assets/ourWorks5.jpg" alt="An aerial view of a green coastline along the azure sea.">
+                    </figure>
+                </a></li>
+                <li class="scaleUp"><a href="javascript:void(0)">
+                    <figure>
+                        <figcaption>
+                            <p class="italic">Fashion</p>
+                            <p>Crossfit · 15.4 Open Workout</p>
+                        </figcaption>
+                        <img src="assets/ourWorks6.jpg" alt="A snowy mountain range framed by a beautiful lake and grey sky.">
+                    </figure>
+                </a></li>
+                <li class="scaleUp"><a href="javascript:void(0)">
+                    <figure>
+                        <figcaption>
+                            <p class="italic">Fashion</p>
+                            <p>Crossfit · 15.4 Open Workout</p>
+                        </figcaption>
+                        <img src="assets/ourWorks7.jpg" alt="An adventurous person standing on a high rock overlooking the see, silhouetted by the bright sun.">
+                    </figure>
+                </a></li>
+                <li class="scaleUp"><a href="javascript:void(0)">
+                    <figure>
+                        <figcaption>
+                            <p class="italic">Fashion</p>
+                            <p>Crossfit · 15.4 Open Workout</p>
+                        </figcaption>
+                        <img src="assets/ourWorks8.jpg" alt="Two surfers carving down the monstrous pipe of a wave.">
+                    </figure>
+                </a></li>
+            </ul>
+        </section>
+        <section class="whyChooseUs">       <!--why choose us section-->
+            <div class="wrapper">
+                <header>
+                    <div class="sectionHeader">
+                        <h2>Why Choose Us</h2>
+                        <div class="imgBox">
+                            <img src="assets/hammers.png" alt="Crossed hammers icon.">
+                        </div>
+                        <p class="italic">Our Mission We Build Amazing Website</p>
+                    </div>
+                </header>
+                <div class="chooseUs--flex">
+                    <div class="ultraServices">
+                        <p class="italic">We deliver High Quality Services</p>
+                        <h3>Ultra Services & Best Support</h3>
+                        <p class="serviceText">At veros eos et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatem deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati. cupiditate non provident. similique sunt in culpa qui officia deserunt mollitia animie id est laborum et dolorem fuga.</p>
+                        <p class="italic dark"><span>John Doe - </span>CEO/Founder of Zap</p>
+                    </div>
+                    <div class="smartPhone">
+                        <img src="assets/smartPhone.jpg" alt="A close up of a user accessing our great services and support on their smartphone.">
+                    </div>
+                    <div class="servicesTiles">
+                        <div class="servicesBox service1">
+                            <h4>Trending</h4>
+                            <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece</p>
+                        </div>
+                        <div class="servicesBox service2">
+                            <h4>Smart Setting</h4>
+                            <p>Sed ut percipiatis omnis iste natus error sit voluptatem accusantium</p>
+                        </div>
+                        <div class="servicesBox service3">
+                            <h4>Powerful Admin</h4>
+                            <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece</p>
+                        </div>
+                        <div class="servicesBox service4">
+                            <h4>Sleeping Mode</h4>
+                            <p>Sed ut percipiatis omnis iste natus error sit voluptatem accusantium</p>
+                        </div>
+                        <div class="servicesBox service5">
+                            <h4>User Friendly</h4>
+                            <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece</p>
+                        </div>
+                        <div class="servicesBox service6">
+                            <h4>Auto Backup</h4>
+                            <p>Sed ut percipiatis omnis iste natus error sit voluptatem accusantium</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="statistics">        <!--statistics bar-->
+            <div class="wrapper">
+                <div class="statTiles">
+                    <p class="statNumber counter" data-count="35">0</p>
+                    <p class="italic">Team Members</p>
+                </div>
+                <div class="statTiles">
+                    <p class="statNumber counter" data-count="5225">0</p>
+                    <p class="italic">Lines of Codes</p>
+                </div>
+                <div class="statTiles">
+                    <p class="statNumber counter" data-count="4977">0</p>
+                    <p class="italic">Satisfied Clients</p>
+                </div>
+                <div class="statTiles">
+                    <p class="statNumber counter" data-count="178">0</p>
+                    <p class="italic">PSD files included</p>
+                </div>
+            </div>
+        </section>
+        <section class="meetOurTeam">       <!--Our Team section-->
+            <div class="wrapper">
+                <header>
+                    <div class="sectionHeader">
+                        <h2>Meet Our Team</h2>
+                        <div class="imgBox">
+                            <img src="assets/hammers.png" alt="Crossed hammers icon.">
+                        </div>
+                        <p class="italic">We Make Beautiful Template</p>
+                    </div>
+                </header>
+                <div class="team__container--flex">
+                    <figure>
+                        <img src="assets/johnSnow.jpg" alt="A headshot of John Snow, our CEO and Co-founder">
+                        <figcaption>
+                            <p class="figcap__text--name">John Snow</p>
+                            <p class="italic">CEO/Co-founder</p>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <img src="assets/tyrionLannister.jpg" alt="A headshot of Tyrion Lannister, our Art Director and Co-founder">
+                        <figcaption>
+                            <p class="figcap__text--name">Tyrion Lannister</p>
+                            <p class="italic">Art Director/Co-founder</p>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <img src="assets/sansaStark.jpg" alt="A headshot of Sansa Stark, our Product Manager and Co-founder">
+                        <figcaption>
+                            <p class="figcap__text--name">Sansa Stark</p>
+                            <p class="italic">Product Manager/Co-founder</p>
+                        </figcaption>
+                    </figure>
+                </div>
+                <h3>Are you crazy man?</h3>
+                <div class="teamContentFlex">
+                    <p>The standard chunk of Lorem Ipsum used since the 1500s  is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum"</p>
+                    <a href="javascript:void(0)" class="boxLink joinUsLink">Join With Us</a>
+                </div>
+            </div>
+        </section>
+        <section class="clientTestimonials">    <!--testimonials section-->
+            <div class="wrapper">
+                <header>
+                    <div class="sectionHeader">
+                        <h2>What Client Say?</h2>
+                        <div class="imgBox">
+                            <img src="assets/hammers.png" alt="Crossed hammers icon.">
+                        </div>
+                        <p class="italic">Our Happy Clients</p>
+                    </div>
+                </header>
+                <div class="testimonial__content--flex">
+                    <div class="clientPics carousel">
+                        <div class="carousel-cell">
+                            <img src="assets/client1.jpg" alt="A headshot of Jeff, one of our satisfied clients.">
+                        </div>
+                        <div class="carousel-cell">
+                            <img src="assets/client2.jpg" alt="A headshot of Jen, one of our many satisfied cients.">
+                        </div>
+                        <div class="carousel-cell">
+                            <img src="assets/client3.jpg" alt="A headshot of Rob, one of our many satisfied clients.">
+                        </div>
+                    </div>
+                        <p class="italic">“There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by
+                        injected humour, or randomised words which don't look even slightly believable.”</p>
+                        <div class="clientInfo">
+                            <div class="imgBox">
+                                <img src="assets/triangle.png" alt="Upside down triangle icon.">
+                            </div>
+                            <h2>White Shadow Walker</h2>
+                            <p class="italic">CEO/Founder Dell</p>
+                        </div>
+                    </div>
+                </div>
+        </section>
+        <section class="priceQuote"> <!--price quote section-->
+            <div class="wrapper">
+                <p class="italic">Looking for a <span>quality and affordable </span>for your next project?</p>
+                <a href="javascript:void(0)" class="boxLink quoteLink">Get A Quote</a>
+            </div>
+        </section>
+        <section class="latestBlog" id="blog">
+            <div class="wrapper">
+                <header>
+                    <div class="sectionHeader">     <!--blog section-->
+                        <h2>Latest Blog</h2>
+                        <div class="imgBox">
+                            <img src="assets/hammers.png" alt="Crossed hammers icon.">
+                        </div>
+                        <p class="italic">Tell Your Story</p>
+                    </div>
+                </header>
+            </div>
+            <div class="blogWrapper">
+                <ul class="blogGallery">
+                    <li class="scaleUp scaleUp1">
+                        <ul class="twoTiles">
+                            <li class="blogTiles">
+                                <a href="javascript:void(0)">
+                                    <figure>
+                                        <img src="assets/leedsJuicery.jpg" alt="A stylish picture of lemons and limes.">
+                                    </figure>
+                                </a>
+                            </li>
+                            <li class="descriptionContainer blogTiles">
+                                <figure class="postDescription leftTriangle">
+                                    <p class="italic">Brading Design</p>
+                                    <p class="postTitle">Leeds Juicery</p>
+                                    <p class="postContent">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium totam.</p>
+                                    <a href="javascript:void(0)">Read More&nbsp;&nbsp;
+                                        <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+                                    </a>
+                                </figure>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="scaleUp scaleUp2">
+                        <ul class="twoTiles">
+                            <li class="blogTiles">
+                                <a href="javascript:void(0)">
+                                    <figure>
+                                        <img src="assets/itaewon.jpg" alt="A close up of water droplets beading off a flower.">
+                                    </figure>
+                                </a>
+                            </li>
+                            <li class="descriptionContainer blogTiles">
+                                <figure class="postDescription leftTriangle">
+                                    <p class="italic">Motion Graphic</p>
+                                    <p class="postTitle">Hello Itaewon Project</p>
+                                    <p class="postContent">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium totam.</p>
+                                    <a href="javascript:void(0)">Read More&nbsp;&nbsp;
+                                        <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+                                    </a>
+                                </figure>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="scaleUp scaleUp3">
+                        <ul class="twoTiles">
+                            <li class="descriptionContainer blogTiles changeOrder2">
+                                <figure class="postDescription rightTriangle">
+                                    <p class="italic">Lookbook Seasonal</p>
+                                    <p class="postTitle">Brooklyn</p>
+                                    <p class="postContent">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium totam.</p>
+                                    <a href="javascript:void(0)">Read More&nbsp;&nbsp;
+                                        <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+                                    </a>
+                                </figure>
+                            </li>
+                            <li class="blogTiles changeOrder1">
+                                <a href="javascript:void(0)">
+                                    <figure>
+                                        <img src="assets/brooklyn.jpg" alt="A view from the surface of an ocean wave, half submerged and half viewing the sky.">
+                                    </figure>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="scaleUp scaleUp4">
+                        <ul class="twoTiles">
+                            <li class="descriptionContainer blogTiles changeOrder2">
+                                <figure class="postDescription rightTriangle">
+                                    <p class="italic">Photography</p>
+                                    <p class="postTitle">Maxi Dress</p>
+                                    <p class="postContent">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium totam.</p>
+                                    <a href="javascript:void(0)">Read More &nbsp;&nbsp;
+                                        <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+                                    </a>
+                                </figure>
+                            </li>
+                            <li class="blogTiles changeOrder1">
+                                <a href="javascript:void(0)">
+                                    <figure>
+                                        <img src="assets/maxi.jpg" alt="A person staring of at a million stars in the night sky, next to a large tree.">
+                                    </figure>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="pricing" id="pricing">      <!--pricing and plans section-->
+            <div class="wrapper">
+                <header>
+                    <div class="sectionHeader">
+                        <h2>Pricing & Plans</h2>
+                        <div class="imgBox">
+                            <img src="assets/hammers.png" alt="Crossed hammers icon.">
+                        </div>
+                        <p class="italic">Get Your Plans for Work</p>
+                    </div>
+                </header>
+                <h4 class="register">Register now <span>Or</span> Try if free for 30 days</h4>
+                <div class="flexPlans">
+                    <div class="plans">
+                        <h4>Basic Plan</h4>
+                        <ul>
+                            <li>15 Email Account</li>
+                            <li>100 Gb Space <i class="fa fa-check" aria-hidden="true"></i></li>
+                            <li>1 Domain Name</li>
+                            <li>500Gb Bandwidth <i class="fa fa-check" aria-hidden="true"></i></li>
+                            <li>25 MysSQL Databases</li>
+                            <li>Enhanced Security</li>
+                        </ul>
+                        <p class="italic monthly"><span class="dollarSign">$</span><span class="bigPrice">185</span>monthly</p>
+                        <a href="javascript:void(0)" class="getPlanLink boxLink">Get Plan</a>
+                    </div>
+                    <div class="plans">
+                        <h4>Business Plan</h4>
+                        <ul>
+                            <li>15 Email Account</li>
+                            <li>100 Gb Space
+                                <i class="fa fa-check" aria-hidden="true"></i>
+                            </li>
+                            <li>1 Domain Name</li>
+                            <li>500Gb Bandwidth
+                                <i class="fa fa-check" aria-hidden="true"></i>
+                            </li>
+                            <li>25 MysSQL Databases</li>
+                            <li>Enhanced Security</li>
+                        </ul>
+                        <p class="italic monthly"><span class="dollarSign">$</span>
+                            <span class="bigPrice">235</span>monthly</p>
+                        <a href="javascript:void(0)" class="getPlanLink boxLink">Get Plan</a>
+                    </div>
+                    <div class="plans">
+                        <h4>Premium Plan</h4>
+                        <ul>
+                            <li>15 Email Account</li>
+                            <li>100 Gb Space
+                                <i class="fa fa-check" aria-hidden="true"></i>
+                            </li>
+                            <li>1 Domain Name</li>
+                            <li>500Gb Bandwidth
+                                <i class="fa fa-check" aria-hidden="true"></i>
+                            </li>
+                            <li>25 MysSQL Databases</li>
+                            <li>Enhanced Security</li>
+                        </ul>
+                        <p class="italic monthly"><span class="dollarSign">$</span>
+                            <span class="bigPrice">185</span>monthly</p>
+                        <a href="javascript:void(0)" class="getPlanLink boxLink">Get Plan</a>
+                    </div>
+                    <div class="plans">
+                        <h4>Ultimate Plan</h4>
+                        <ul>
+                            <li>15 Email Account</li>
+                            <li>100 Gb Space
+                                <i class="fa fa-check" aria-hidden="true"></i>
+                            </li>
+                            <li>1 Domain Name</li>
+                            <li>500Gb Bandwidth
+                                <i class="fa fa-check" aria-hidden="true"></i>
+                            </li>
+                            <li>25 MysSQL Databases</li>
+                            <li>Enhanced Security</li>
+                        </ul>
+                        <p class="italic monthly"><span class="dollarSign">$</span>
+                            <span class="bigPrice">235</span>monthly</p>
+                        <a href="javascript:void(0)" class="getPlanLink boxLink">Get Plan</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>            <!--footer section-->
+        <div class="wrapper">
+            <div class="footerContent">
+                <div class="footerLeft">
+                    <div class="footerText">
+                        <h4>Creative Agency From London - UK</h4>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                        <img src="assets/zapFooterLogo.png" alt="ZAP logo.">
+                    </div>
+                    <div class="footerLinks">
+                        <h4>Links</h4>
+                        <ul>
+                            <li><a href="javascript:void(0)">Theme features</a></li>
+                            <li><a href="javascript:void(0)">Page Builder</a></li>
+                            <li><a href="javascript:void(0)">Private Policy</a></li>
+                            <li><a href="javascript:void(0)">Shop Ruler</a></li>
+                            <li><a href="#services">Services</a></li>
+                            <li><a href="#gallery">Gallery Layout</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footerRight">
+                    <div class="twitterWidget">
+                        <h4>Twitter Widget</h4>
+                        <p>Looking for an awesome CREATIVE WordPress Theme? Esquise was updated  and optimised to run even better. Find it here:</br> <a href="javascript:void(0)">http://t.co/OWWEMQEQ48</a></p>
+                        <p class="daysAgo"><i class="fa fa-twitter" aria-hidden="true"></i>01 day ago</p>
+                        <p>It is a long established fact that a reader will get distracted by the readable. Find it here:</br><a href="javascript:void(0)">http://t.co/OWWEMQEQ48</a></p>
+                        <p class="daysAgo"><i class="fa fa-twitter" aria-hidden="true"></i>02 days ago</p>
+                    </div>
+                    <div class="instagram">
+                        <h4>Instagram</h4>
+                        <ul>
+                            <li>
+                                <figure><img src="assets/instaFooter.jpg" alt="A silhouette of page code author Chelsea Keeley leaning on a sculpture in Iceland.">
+                                <figcaption>
+                                    <p><i class="fa fa-search" aria-hidden="true"></i></p>
+                                </figcaption></figure>
+                            </li>
+                            <li>
+                                <figure><img src="assets/instaFooter.jpg" alt="A silhouette of page code author Chelsea Keeley leaning on a sculpture in Iceland.">
+                                <figcaption>
+                                    <p>
+                                        <i class="fa fa-search" aria-hidden="true"></i>
+                                    </p>
+                                </figcaption></figure>
+                            </li>
+                            <li>
+                                <figure><img src="assets/instaFooter.jpg" alt="A silhouette of page code author Chelsea Keeley leaning on a sculpture in Iceland.">
+                                <figcaption>
+                                    <p>
+                                        <i class="fa fa-search" aria-hidden="true"></i>
+                                    </p>
+                                </figcaption></figure>
+                            </li>
+                            <li>
+                                <figure><img src="assets/instaFooter.jpg" alt="A silhouette of page code author Chelsea Keeley leaning on a sculpture in Iceland.">
+                                <figcaption>
+                                <p>
+                                    <i class="fa fa-search" aria-hidden="true"></i>
+                                </p>
+                                </figcaption></figure>
+                            </li>
+                            <li>
+                                <figure><img src="assets/instaFooter.jpg" alt="A silhouette of page code author Chelsea Keeley leaning on a sculpture in Iceland.">
+                                <figcaption>
+                                <p>
+                                    <i class="fa fa-search" aria-hidden="true"></i>
+                                </p>
+                                </figcaption></figure>
+                            </li>
+                            <li>
+                                <figure>
+                                
+                                    <img src="assets/instaFooter.jpg" alt="A silhouette of page code author Chelsea Keeley leaning on a sculpture in Iceland.">
+                                <figcaption>
+                                    <p>
+                                        <i class="fa fa-search" aria-hidden="true"></i>
+                                    </p>
+                                </figcaption>
+                            </figure>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footerCopy">
+                <p>&copy 2015 zap creative psd template. Powered by Wpelite</p>
+                <div class="socialMedia">
+                    <a href="http://www.facebook.com"><i class="fa fa-facebook" aria-hidden="true" aria-label="facebook"></i></a>
+                    <a href="http://www.twitter.com"><i class="fa fa-twitter" aria-hidden="true" aria-label="twitter"></i></a>
+                    <a href="http://www.dribbble.com"><i class="fa fa-dribbble" aria-hidden="true" aria-label="dribble"></i></a>
+                    <a href="http://www.behance.net"><i class="fa fa-behance" aria-hidden="true" aria-label="behance"></i></a>
+                    <a href="http://www.pinterest.com"><i class="fa fa-pinterest-p" aria-hidden="true" aria-label="pinterest"></i></a>
+                    <a href="http://www.google.com"><i class="fa fa-google-plus" aria-hidden="true" aria-label="google"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://use.fontawesome.com/a32ce8b2ea.js"></script>
+    <!-- loading jquery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <!-- for flickity in testimonials -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.0.10/flickity.pkgd.min.js"></script>
+    <!-- for stats counter -->
+    <script src="js/countUp.js"></script>
+
+    <script>
+        $(function () {
+            // slide toggle for mobile menu
+            $(".toggle").click(function () {
+                3
+                $(".menu").slideToggle(700);
+                4
+            });
+            // slide toggle for sub menu
+             $(".toggleSub").click(function () {
+                    3
+                    $(".menuSub").slideToggle(700);
+                    4
+                });
+
+            // FLICKITY FOR TESTIMONIALS
+            $(function () {
+                    $('.clientPics').flickity({
+                        wrapAround: true,
+                        autoPlay: 1500,
+                        setGallerySize: false,
+
+                    });
+                });
+
+            // start of countup on scroll for statistics section, code courtesy of https://codepen.io/dmcreis/pen/VLLYPo and https://github.com/inorganik/countUp.js
+            var a = 0;
+                $(window).scroll(function () {
+
+                    var oTop = $('.counter').offset().top - window.innerHeight;
+                    if (a == 0 && $(window).scrollTop() > oTop) {
+                        $('.counter').each(function () {
+                            var $this = $(this),
+                                countTo = $this.attr('data-count');
+                            $({
+                                countNum: $this.text()
+                            }).animate({
+                                countNum: countTo
+                            },
+
+                                {
+
+                                    duration: 4000,
+                                    easing: 'swing',
+                                    step: function () {
+                                        $this.text(Math.floor(this.countNum));
+                                    },
+                                    complete: function () {
+                                        $this.text(this.countNum);
+                                    }
+
+                                });
+                        });
+                        a = 1;
+                    }
+
+                });
+                // end of countup with scroll
+
+                // start of click transition for navicon
+                $('.hamburger').click(function () {
+                        $(this).toggleClass('open');
+                    });
+
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,322 @@
+/*HEADER STYLES*/    
+
+.mainHeader {
+    background-image: url(../assets/headerHero.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 100vh;
+    position: relative;
+    @include tablet {
+        min-height: 60vh;
+    }
+    @include phone {
+        min-height: initial;
+        background-image: url(../assets/stardust.png);
+        background-repeat: repeat;
+    }
+}
+
+/*MAIN NAV STYLES*/
+
+// ICON ANIMATION START
+
+.hamburger {
+    height: 44px;
+    width: 44px;
+    border: 2px solid #fff;
+    border-radius: 3px;
+    padding: 7px;
+    display: none;
+    position: fixed;
+    right: 10px;
+    top:10px;
+    z-index: 999999999;
+    @include tablet {
+        display: block;
+    }
+}
+
+.hamburger span {
+  display: block;
+  height: 3px;
+  background: #fff;
+  position: absolute;
+  left: 7px;
+  right: 7px;
+  border-radius: 3px;
+  opacity: 1;
+  transition: all 0.5s ease;
+}
+
+.hamburger span:first-child {
+    top: 8px;
+}
+
+.hamburger span:nth-child(2) {
+    top: 17px;
+}
+
+.hamburger span:last-child {
+    top: 27px;
+}
+
+.hamburger.open span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.open span:first-child {
+    transform: rotate(-45deg);
+    top: 17px;
+    
+}
+
+.hamburger.open span:last-child {
+    transform: rotate(45deg);
+    top: 17px;
+    
+}
+
+// ICON ANIMATION END
+
+
+.menuBar {
+    height: 60px;
+    background: rgba(47,47,47, 0.9);
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 31;
+    @include tablet {
+        display: block;
+    }
+    .mobileLogo {
+        position: fixed;
+        width: 140px;
+        left: 5px;
+        top: 8px;
+        display: none;
+        @include tablet {
+            display: block;
+        }
+        img {
+            width: 100%;
+        }
+    }
+}
+
+.navFlex,
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    @include smallDesk {
+        padding-top: 30px;
+    }
+    @include tablet {
+        flex-direction: column;
+        text-align: center;
+    }
+    li {
+        position: relative;
+        @include tablet {
+            padding: 10px 0;
+        }
+    }
+}
+
+nav {
+    @include tablet {
+      z-index: 30;              
+    }
+    ul {
+        @include tablet {
+        height: 100vh;
+        font-size: 3rem;
+        z-index: 30;
+        padding-top: 60px;              
+        }
+    }
+    li {
+        @include tablet {
+        z-index: 30;              
+        }
+    }
+
+}
+
+.navFlex {
+    padding-top: 70px;
+    align-items: center;
+    position: relative;
+    @include smallDesk {
+        flex-direction: column;
+        align-items: center;
+        padding-top: 40px;
+    }
+    @include tablet {
+        padding-top: 0;
+    }
+    .logo {
+        @include tablet {
+            display: none;
+        }
+        @include phone {
+            display: none;
+        }
+    }
+}
+
+.subNav {
+    flex-direction: column;
+    display: none;
+    position: absolute;
+    @media (min-width: 769px){
+    }
+    li {
+        display: block;
+    }
+    a {
+        border: none;
+        &:hover {
+            color: $highlight;
+        }
+        @include smallDesk {
+            font-size: 1.2rem;
+        }
+        @include tablet {
+        font-size: 2.5rem;
+        }
+        &:hover {
+            border: none;
+        }
+    }
+    @include tablet {
+        display: none;
+        padding-top: 0;
+        padding-left: 10px;
+        z-index: 30;
+        position: relative;
+        height: 30vh;
+    }
+}
+
+li:hover .subNav,
+a:focus ~ ul {
+    @media (min-width: 769px){
+        display: block;
+    }
+}
+
+nav {
+    width: 65%;
+    @include smallDesk {
+        width: 80%;
+    }
+    i {
+        display: inline-block;
+        padding: 5px;
+    }
+    @include tablet {
+      display: none;
+      position: fixed;
+      width: 100%;
+      background: rgba(47,47,47, 0.9);
+      top: 0;
+      left: 0;
+      right: 0;
+    }
+    @include phone {
+    }
+}
+
+.mainNav li {
+    color: $pageHeader;
+    text-transform: uppercase;
+    z-index: 30;
+}
+
+.mainNav .portfolio:hover {
+    color: $highlight;
+}
+
+nav a {
+    padding: 5px 0 20px 0;
+    border-bottom: 2px solid transparent;
+    &:hover {
+        border-bottom: 2px solid $highlight;
+        @include tablet {
+            border: none;
+            color: $highlight;
+       }
+    }
+}
+
+/*MAIN TITLE*/
+
+h1 {
+    letter-spacing: -5px;
+    margin: 0;
+    line-height: 10rem;
+    @include smallDesk {
+        line-height: 5rem;
+    }
+    @include tablet {
+        line-height: normal;
+        letter-spacing: normal;
+    }
+}
+
+.headerContent {
+    text-align: center;
+    margin-top: 20vh;
+    a {
+        @include italicText(1.8rem);
+        color: $pageHeader;
+        padding: 30px 21px;
+        border: 1px solid $pageHeader;
+        border-radius: 50%;
+        display: inline-block;
+        margin: 50px 0;
+        @include tablet {
+            padding: 20px 11px;
+        }
+        @include phone {
+            padding: 20px 11px;
+        }
+        &:hover {
+            color: $highlight;
+            border: 1px solid $highlight;
+        }
+    }
+    p {
+        color: $pageHeader;
+    }
+}
+
+.arrowLeft,
+.arrowRight {
+    color: $pageHeader;
+    padding: 15px 20px;
+    border: 1px solid $pageHeader;
+    opacity: 0.4;
+    position: absolute;
+    top: 320px;
+    @include tablet {
+        top: 260px;
+    }
+    &:hover {
+        color: $highlight;
+        border: 1px solid $highlight;
+    }
+}
+
+.arrowLeft {
+    left: 20px;
+}
+
+.arrowRight {
+    right: 20px;
+}
